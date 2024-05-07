@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Personal Portifolio</title>
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="logo">Metasebiyaw Asfaw</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="humburger-nav">
+      <div class="logo">Metasebiyaw Asfaw</div>
+      <div class="humburger-menu">
+        <div class="humburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#About" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="pictures/pic-c.jpg"
+          alt="metasebiyaw asfaw profile picture"
+          class="mypic"
+        />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I am</p>
+        <hi class="title">Metasebiyaw Asfaw</hi>
+        <p class="section-text-p2">Frontend Developer, <br> Figma UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="button"
+            onclick="window.open(`./pictures/Mobile-App-Dev-Doc.pdf`)"
+          >
+            Download CV
+          </button>
+          <button class="button" onclick="location.href=`#contact`">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="icons/linkedin.png" alt="linkedin" class="icon">
+          <img src="icons/github.png" alt="github" class="icon">
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container1">
+          <img src="pictures/pic-d.jpg" alt="picture" class="about-pic">
+        </div>
+        <div class="about-details-container1">
+          <div class="about-containers1">
+            <div class="details-container1">
+              <img src="icons/quality.png" alt="quality" class="icon">
+              <h3>Experience</h3>
+              <p>4+ months <br> Frontend Development</p>
+            </div>
+            <div class="details-container1">
+              <img src="icons/briefcase.png" alt="education" class="icon">
+              <h3>Education</h3>
+              <p>Undergraduate Software Engineering Student</p>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <p>Hey there! I'm Metasebiyaw Asfaw, an undergraduate software engineering student at ASTU. Besides my studies, I'm also a front-end software developer and passionate about creating user-friendly interfaces. I specialize in UI/UX design using tools like Figma, where I bring creative ideas to life and ensure smooth user experiences. While I'm still early in my career, I'm dedicated to honing my skills in both development and design to create impactful digital solutions. Whether it's coding, designing, or discussing the latest trends in tech, I'm always excited to dive in and learn more!</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-div">
+        <img src="icons/caret-arrow-up.png" alt="arrow" class="icon-arrow-up "
+        onclick="location.href='#profile'">
+        <img src="icons/drop-down-arrow.png" alt="arrow" class="icon-arrow "
+      onclick="location.href='#experience'">
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section-text">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="skills-container">
+          <div class="front-end-container">
+            <h2>Frontend Development</h2>
+            <div class="frontend-skills-container">
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>React</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+                          <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>Figma UI/UX</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="backend-end-container">
+            <h2>Backend Development</h2>
+            <div class="backend-skills-container">
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img src="icons/correct.png" alt="Experience-icon" class="icon">
+                <div>
+                  <h3>GIT</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-div">
+        <img src="icons/caret-arrow-up.png" alt="arrow" class="icon-arrow-up "
+        onclick="location.href='#about'">
+        <img src="icons/drop-down-arrow.png" alt="arrow" class="icon-arrow "
+      onclick="location.href='#projects'">
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project1-container">
+          <h2>E-commerce Website</h2>
+          <div class="ecommerce">
+            <img src="pictures/main.png" alt="main page of ecommerce Website" >
+            <img src="pictures/product.png" alt="main page of ecommerce Website">
+            <img src="pictures/product detail.png" alt="main page of ecommerce Website">
+          </div>
+          <div class="github-link">
+            <button onclick=""><img src="icons/github.png" alt="github logo">
+              <p>Go to github</p></button>
+          </div>
+        </div>
+        <div class="project2-container">
+          <div>
+            <h2>BR Archtecture Website</h2>
+            <div class="br-archtects">
+              <img class="br-pic-1" src="pictures/Webies Day 4 Laptop Mode.png" alt="">
+              <img class="br-pic-2" src="pictures/Webies Day 4 Tablet Mode.png" alt="">
+              <img class="br-pic-3" src="pictures/Webies Day 4 Mobile Mode.png" alt="">
+            </div>
+            <div class="github-link">
+              <button onclick=""><img src="icons/github.png" alt="github logo">
+                <p>Go to github</p></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow-div">
+        <img src="icons/caret-arrow-up.png" alt="arrow" class="icon-arrow-up "
+        onclick="location.href='#experience'">
+        <img src="icons/drop-down-arrow.png" alt="arrow" class="icon-arrow "
+      onclick="location.href='#contact'">
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section-text-p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <label for="">Enter First Name</label>
+      </div>
+      <div class="arrow-div">
+        <img src="icons/caret-arrow-up.png" alt="arrow" class="icon-arrow-up "
+        onclick="location.href='#projects'">
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    </script>
+  </body>
+</html>
